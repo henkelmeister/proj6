@@ -183,5 +183,35 @@ public class ProjectTests {
 
     assertTrue(tree.equals(smallTree));
   }
+/*
+  testRemoveAndRebalance
+add to a tree: 3, 1, 5, 0, 2, 4, 6.
+then, perform these tests, using the tree root as the argument:
+   check that subtreeSize returns 7
+   check that subtreeHeight returns 2
+   remove 3
+   check that subtreeSize returns 6
+   check that subtreeHeight returns 2
+remove 5
+make the two checks: 5, 2
+remove 4
+make the two checks: 4, 2
+remove 6  // should trigger full rebalance
+make the two checks: 3, 1
+
+testRemoveNoRebalance
+add to a tree:  3, 1, 5, 0, 2, 4, 6
+   check that subtreeSize returns 7
+   check that subtreeHeight returns 2
+remove 3
+   check that subtreeSize returns 6
+   check that subtreeHeight returns 2
+remove 5
+make the two checks: 5, 2
+remove 4
+make the two checks: 4, 2
+*/
+
+
 
 }
